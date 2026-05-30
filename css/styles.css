@@ -80,7 +80,7 @@ a:hover { color: var(--green); }
   justify-content: space-between;
   gap: 1rem;
   min-height: var(--header-h);
-  padding: 0.75rem 0;
+  padding-block: 0.75rem;
 }
 
 .logo {
@@ -392,15 +392,16 @@ body.nav-open { overflow: hidden; }
   position: relative;
   z-index: 1;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
   flex: 1;
   align-self: stretch;
   min-height: inherit;
+  padding-block: 1.25rem 2rem;
 }
 
 .hero-content {
-  padding: 2.5rem 0 3rem;
+  padding-block: 0.5rem 2.5rem;
   color: #fff;
   width: 100%;
   max-width: 36rem;
@@ -1163,9 +1164,12 @@ body.nav-open { overflow: hidden; }
   .nav-backdrop { display: none; }
   .nav-mobile { display: none; }
 
-  .hero .container { align-items: center; }
+  .hero .container {
+    align-items: center;
+    padding-block: 0;
+  }
   .hero-content {
-    padding: 3rem 0;
+    padding-block: 3rem;
     align-items: flex-start;
     text-align: left;
   }
